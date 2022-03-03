@@ -68,12 +68,13 @@ function delSel() {
 }
 
 
-
+// 마지막 요소 삭제
 document.getElementById("btnDelLast").addEventListener('click',delLast);
 
 function delLast() {
 
     var listChild = listBody.children
+    // 전체 길이에서 1을 빼주어 실제 길이와 맞춘다.
     var lastIdx = listBody.children.length-1
 
     listBody.removeChild(listChild[lastIdx])
@@ -92,6 +93,3 @@ function delAll() {
     // list body내용 전체를 삭제할 수도 있음
 
 }
-
-
-//https://2boki.tistory.com/142
